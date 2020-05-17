@@ -1,6 +1,6 @@
 Generate all k-length combinations from n-length set {0, 2, ..., n-1}
 
-Tree methods : 
+Three methods : 
 
 A) A recursive one
 
