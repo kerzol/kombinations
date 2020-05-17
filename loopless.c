@@ -255,7 +255,7 @@ void lap () {
 
 int main (int argc, char** argv) {
   if (argc < 3) {
-    printf ("Usage : %s n k\n Test it like %s 30 15", argv[0], argv[0]);
+    printf ("Usage : %s n k\n Test it like %s 5 3", argv[0], argv[0]);
     return 1;
   }
 
@@ -283,7 +283,7 @@ int main (int argc, char** argv) {
   lap();
   combination* c = gen_comb_coolest (k, z);
   // DEBUG
-  //  print_combinations (c);
+  print_combinations (c);
   printf ("End generation, %d generated \n", c->n);
   lap ();
 
@@ -293,7 +293,7 @@ int main (int argc, char** argv) {
   lap();
   c = gen_comb_algo57 (k, z);
   // DEBUG
-  // print_combinations (c);
+  print_combinations (c);
   printf ("End generation, %d generated \n", c->n);
   lap();
 
@@ -302,7 +302,7 @@ int main (int argc, char** argv) {
   lap();
   c = mkcomb (k, z);
   // DEBUG
-  // print_combinations (c);
+  print_combinations (c);
   printf ("End generation (old method), %d generated \n", c->n);
   lap();
 
